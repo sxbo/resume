@@ -1,55 +1,32 @@
 <template>
   <div class="page-resume">
     <div class="page-resume-cont">
+      <div class="resume-medium">
         <div class="cont-imgbox">
           <div class="image convenient">
             <div class="conv-float">
               <div class="conv conv-color">简约</div>
-              <div class="conv-desc">一种简单的美</div>
+              <div class="conv-desc">始于简约</div>
             </div>
           </div>
+        </div>
+        <div class="cont-imgbox">
           <div class="image minimalism">
             <div class="conv-float">
-              <div class="conv mini-color">便捷</div>
-              <div class="mini-desc">即拿即用</div>
+              <div class="conv mini-color">夺目</div>
+              <div class="mini-desc">陷于夺目</div>
             </div>
           </div>
+        </div>
+        <div class="cont-imgbox">
           <div class="image dazzle">
             <div class="conv-float">
-              <div class="conv dazz-color">夺目</div>
-              <div class="dazz-desc">第一眼发现你</div>
+              <div class="conv dazz-color">便捷</div>
+              <div class="dazz-desc">忠于便捷</div>
             </div>
           </div>
         </div>
-        <div class="cont-stepbox">
-          <div class="step">
-            <div>
-              <span>开始</span>
-            </div>
-              麦子收罢新粮归仓以后，原上各个村庄的“忙罢会”便接踵而来，每个村子都有自己过会的日子。太阳冒红时，白鹿原的官道小路上，庄稼汉男女穿着浆捶得平展硬峥的家织布白衫青裤，臂弯里挎着装有用新麦子面蒸成的各色花馍的竹提盒笼儿，乐颠颠地去走亲访友，吃了喝了谝了，于日落时散散悠悠回家去
-          </div>
-          <!-- <div class="step-line"></div> -->
-          <div class="step">
-            <div>
-              <span>开始</span>
-            </div>
-            麦子收罢新粮归仓以后，原上各个村庄的“忙罢会”便接踵而来，每个村子都有自己过会的日子。太阳冒红时，白鹿原的官道小路上，庄稼汉男女穿着浆捶得平展硬峥的家织布白衫青裤，臂弯里挎着装有用新麦子面蒸成的各色花馍的竹提盒笼儿，乐颠颠地去走亲访友，吃了喝了谝了，于日落时散散悠悠回家去
-          </div>
-          <!-- <div class="step-line"></div> -->
-          <div class="step">
-            <div>
-              <span>开始</span>
-            </div>
-              麦子收罢新粮归仓以后，原上各个村庄的“忙罢会”便接踵而来，每个村子都有自己过会的日子。太阳冒红时，白鹿原的官道小路上，庄稼汉男女穿着浆捶得平展硬峥的家织布白衫青裤，臂弯里挎着装有用新麦子面蒸成的各色花馍的竹提盒笼儿，乐颠颠地去走亲访友，吃了喝了谝了，于日落时散散悠悠回家去
-          </div>
-          <!-- <div class="step-line"></div> -->
-          <div class="step">
-            <div>
-              <span>开始</span>
-            </div>
-              麦子收罢新粮归仓以后，原上各个村庄的“忙罢会”便接踵而来，每个村子都有自己过会的日子。太阳冒红时，白鹿原的官道小路上，庄稼汉男女穿着浆捶得平展硬峥的家织布白衫青裤，臂弯里挎着装有用新麦子面蒸成的各色花馍的竹提盒笼儿，乐颠颠地去走亲访友，吃了喝了谝了，于日落时散散悠悠回家去
-          </div>
-        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -62,6 +39,7 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   }
+  //始于颜值,敬于才华,合于性格,久于品行 始于颜值 陷于才华 忠于人品
 };
 </script>
 
@@ -81,61 +59,34 @@ export default {
   background: #fff;
   margin: 2px 0px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:0 5px;
 }
-.cont-stepbox {
+.resume-medium{
+  width: 100%;
+  height: 70%;
+  border: 1px solid #cec8c8;
+  box-shadow: 0px 0px 5px #b1acac;
   display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
+
 }
 .cont-imgbox {
-  width: 50%;
+  width: 25%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 10px 0;
-  overflow: hidden;  
-  
+  justify-content: center; 
 }
 
-.step {
-  width: 50%;
-  height: 20%;
-  line-height: 1.8rem;
-  overflow: hidden;  
-  letter-spacing:.2rem;
-  font-size: .8rem;
-}
-.step span {
-  display: inline-block;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-
-.step-text {
-  margin: 5px 0;
-  line-height: 1.8rem;
-  min-height: 48px;
-  height: 150px;
-  overflow: hidden;  
-  text-overflow: ellipsis;
-  letter-spacing:.2rem;
-  font-size: .8rem;
-}
 .image {
   position: relative;
   margin-top: 2.8%;
-  width: 21.03%;
-  min-width: 100px;
-  height: 30%;
-  min-height: 150px;
+  width: 50%;
+  height: 50%;
   background: #fff;
-  margin-right: 20%;
   background-position: 0 0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
